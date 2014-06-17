@@ -1,3 +1,4 @@
+! Modifying to see something
 ! Use true type fonts
 xterm*faceName: DejaVu Sans Mono Book
 xterm*faceSize: 10
