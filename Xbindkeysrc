@@ -1,0 +1,28 @@
+"brightness-slider"
+    m:0x48 + c:56
+    Alt+Mod4 + b
+
+
+# Launch the chrome app launcher 
+"google-chrome "--profile-directory=Profile 1"  --show-app-list"
+    m:0x48 + c:32
+    Alt+Mod4 + o
+
+"google-chrome --profile-directory=Default  --show-app-list"
+    m:0x48 + c:46
+    Alt+Mod4 + l
+  
+# Scroll through workspaces with wheel
+"/usr/bin/xte 'keydown Alt_L' 'keydown Control_L' 'key Left'  &amp;"
+    Control + Alt + b:4
+
+"/usr/bin/xte 'keydown Alt_L' 'keydown Control_L' 'key Right'"
+    Control + Alt + b:5 + Release
+
+# "/usr/bin/gnome-terminal --geometry=92x50+50+50 --profile=Database \
+# 	--hide-menubar --profile=Mine"
+#     Control+Mod2 + Return
+
+# map Mouse Back button to Alt Left (for Caja back to work)
+"/usr/bin/xte 'keydown Alt_L' 'key Left' 'keyup Alt_L'"
+    b:8
